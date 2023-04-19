@@ -46,8 +46,8 @@
             numericUpDown4 = new NumericUpDown();
             label6 = new Label();
             panel3 = new Panel();
-            label9 = new Label();
             label10 = new Label();
+            label9 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
@@ -69,9 +69,10 @@
             panel1.Controls.Add(numericUpDown2);
             panel1.Controls.Add(numericUpDown1);
             panel1.ForeColor = SystemColors.WindowFrame;
-            panel1.Location = new Point(22, 27);
+            panel1.Location = new Point(2, 1);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(312, 145);
+            panel1.Size = new Size(274, 110);
             panel1.TabIndex = 2;
             // 
             // label2
@@ -80,7 +81,7 @@
             label2.Font = new Font("Mongolian Baiti", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(3, 0);
             label2.Name = "label2";
-            label2.Size = new Size(56, 16);
+            label2.Size = new Size(48, 13);
             label2.TabIndex = 15;
             label2.Text = "POINT";
             // 
@@ -88,9 +89,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("PMingLiU-ExtB", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(85, 47);
+            label3.Location = new Point(74, 35);
             label3.Name = "label3";
-            label3.Size = new Size(21, 13);
+            label3.Size = new Size(17, 11);
             label3.TabIndex = 3;
             label3.Text = "X:";
             // 
@@ -98,9 +99,9 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("PMingLiU-ExtB", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(86, 76);
+            label4.Location = new Point(75, 57);
             label4.Name = "label4";
-            label4.Size = new Size(21, 13);
+            label4.Size = new Size(17, 11);
             label4.TabIndex = 4;
             label4.Text = "Y:";
             // 
@@ -108,18 +109,20 @@
             // 
             numericUpDown2.Font = new Font("PMingLiU-ExtB", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
             numericUpDown2.ForeColor = Color.DimGray;
-            numericUpDown2.Location = new Point(113, 74);
+            numericUpDown2.Location = new Point(99, 56);
+            numericUpDown2.Margin = new Padding(3, 2, 3, 2);
             numericUpDown2.Name = "numericUpDown2";
-            numericUpDown2.Size = new Size(54, 23);
+            numericUpDown2.Size = new Size(47, 20);
             numericUpDown2.TabIndex = 7;
             // 
             // numericUpDown1
             // 
             numericUpDown1.Font = new Font("PMingLiU-ExtB", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
             numericUpDown1.ForeColor = Color.DimGray;
-            numericUpDown1.Location = new Point(113, 45);
+            numericUpDown1.Location = new Point(99, 34);
+            numericUpDown1.Margin = new Padding(3, 2, 3, 2);
             numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(54, 23);
+            numericUpDown1.Size = new Size(47, 20);
             numericUpDown1.TabIndex = 6;
             // 
             // panel2
@@ -137,9 +140,10 @@
             panel2.Controls.Add(numericUpDown4);
             panel2.Controls.Add(label6);
             panel2.ForeColor = SystemColors.WindowFrame;
-            panel2.Location = new Point(22, 178);
+            panel2.Location = new Point(2, 115);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(312, 218);
+            panel2.Size = new Size(274, 164);
             panel2.TabIndex = 0;
             // 
             // label1
@@ -148,7 +152,7 @@
             label1.Font = new Font("Mongolian Baiti", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(105, 16);
+            label1.Size = new Size(87, 13);
             label1.TabIndex = 14;
             label1.Text = "RECTANGLE";
             // 
@@ -157,9 +161,10 @@
             button1.BackColor = Color.Crimson;
             button1.Font = new Font("Cascadia Code", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = SystemColors.HighlightText;
-            button1.Location = new Point(229, 180);
+            button1.Location = new Point(188, 132);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(76, 31);
+            button1.Size = new Size(66, 23);
             button1.TabIndex = 14;
             button1.Text = "DETECT";
             button1.UseVisualStyleBackColor = false;
@@ -169,9 +174,9 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("PMingLiU-ExtB", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(57, 117);
+            label7.Location = new Point(50, 88);
             label7.Name = "label7";
-            label7.Size = new Size(49, 13);
+            label7.Size = new Size(43, 11);
             label7.TabIndex = 10;
             label7.Text = "Height:";
             // 
@@ -179,27 +184,29 @@
             // 
             numericUpDown5.Font = new Font("PMingLiU-ExtB", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
             numericUpDown5.ForeColor = Color.DimGray;
-            numericUpDown5.Location = new Point(112, 113);
+            numericUpDown5.Location = new Point(98, 85);
+            numericUpDown5.Margin = new Padding(3, 2, 3, 2);
             numericUpDown5.Name = "numericUpDown5";
-            numericUpDown5.Size = new Size(54, 23);
+            numericUpDown5.Size = new Size(47, 20);
             numericUpDown5.TabIndex = 12;
             // 
             // numericUpDown6
             // 
             numericUpDown6.Font = new Font("PMingLiU-ExtB", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
             numericUpDown6.ForeColor = Color.DimGray;
-            numericUpDown6.Location = new Point(112, 150);
+            numericUpDown6.Location = new Point(98, 112);
+            numericUpDown6.Margin = new Padding(3, 2, 3, 2);
             numericUpDown6.Name = "numericUpDown6";
-            numericUpDown6.Size = new Size(54, 23);
+            numericUpDown6.Size = new Size(47, 20);
             numericUpDown6.TabIndex = 13;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("PMingLiU-ExtB", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(60, 152);
+            label8.Location = new Point(52, 114);
             label8.Name = "label8";
-            label8.Size = new Size(46, 13);
+            label8.Size = new Size(40, 11);
             label8.TabIndex = 11;
             label8.Text = "Width:";
             // 
@@ -207,9 +214,9 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("PMingLiU-ExtB", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(36, 45);
+            label5.Location = new Point(32, 34);
             label5.Name = "label5";
-            label5.Size = new Size(70, 13);
+            label5.Size = new Size(62, 11);
             label5.TabIndex = 5;
             label5.Text = "Top left X:";
             // 
@@ -217,27 +224,29 @@
             // 
             numericUpDown3.Font = new Font("PMingLiU-ExtB", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
             numericUpDown3.ForeColor = Color.DimGray;
-            numericUpDown3.Location = new Point(112, 43);
+            numericUpDown3.Location = new Point(98, 32);
+            numericUpDown3.Margin = new Padding(3, 2, 3, 2);
             numericUpDown3.Name = "numericUpDown3";
-            numericUpDown3.Size = new Size(54, 23);
+            numericUpDown3.Size = new Size(47, 20);
             numericUpDown3.TabIndex = 8;
             // 
             // numericUpDown4
             // 
             numericUpDown4.Font = new Font("PMingLiU-ExtB", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
             numericUpDown4.ForeColor = Color.DimGray;
-            numericUpDown4.Location = new Point(112, 80);
+            numericUpDown4.Location = new Point(98, 60);
+            numericUpDown4.Margin = new Padding(3, 2, 3, 2);
             numericUpDown4.Name = "numericUpDown4";
-            numericUpDown4.Size = new Size(54, 23);
+            numericUpDown4.Size = new Size(47, 20);
             numericUpDown4.TabIndex = 9;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("PMingLiU-ExtB", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(36, 83);
+            label6.Location = new Point(32, 62);
             label6.Name = "label6";
-            label6.Size = new Size(70, 13);
+            label6.Size = new Size(62, 11);
             label6.TabIndex = 6;
             label6.Text = "Top left Y:";
             // 
@@ -249,18 +258,11 @@
             panel3.Controls.Add(label9);
             panel3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             panel3.ForeColor = SystemColors.WindowFrame;
-            panel3.Location = new Point(340, 29);
+            panel3.Location = new Point(281, 3);
+            panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(411, 369);
+            panel3.Size = new Size(360, 278);
             panel3.TabIndex = 15;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(0, 0);
-            label9.Name = "label9";
-            label9.Size = new Size(0, 31);
-            label9.TabIndex = 0;
             // 
             // label10
             // 
@@ -268,20 +270,29 @@
             label10.Font = new Font("PMingLiU-ExtB", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             label10.Location = new Point(-2, 0);
             label10.Name = "label10";
-            label10.Size = new Size(96, 18);
+            label10.Size = new Size(81, 15);
             label10.TabIndex = 16;
             label10.Text = "Illustration";
             // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(0, 0);
+            label9.Name = "label9";
+            label9.Size = new Size(0, 25);
+            label9.TabIndex = 0;
+            // 
             // nokta_dortgen
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonFace;
-            ClientSize = new Size(800, 422);
+            ClientSize = new Size(643, 283);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
             ForeColor = SystemColors.AppWorkspace;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "nokta_dortgen";
             Text = "Point-Rectangle";
             Load += nokta_dortgen_Load;

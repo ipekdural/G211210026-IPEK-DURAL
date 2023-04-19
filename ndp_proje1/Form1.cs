@@ -22,10 +22,15 @@ namespace ndp_proje1
         {
             if (comboBox1.Text == "Point-Quadrilateral")
             {
-
-
                 nokta_dortgen nokta_Dortgen = new nokta_dortgen();
                 nokta_Dortgen.Show();
+                this.Hide();
+
+            }
+            if (comboBox1.Text == "Point-Circle")
+            {
+              nokta_cember nokta_Cember = new nokta_cember();
+               nokta_Cember.Show();
                 this.Hide();
 
             }
