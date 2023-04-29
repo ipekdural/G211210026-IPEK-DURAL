@@ -29,7 +29,7 @@ namespace ndp_proje1
             circle1.x = (int)numericUpDown3.Value;
             circle1.y = (int)numericUpDown4.Value;
             circle1.radius = (int)numericUpDown5.Value;
-            DrawShapes();
+           
             noktaCember();
         }
         public void noktaCember()
@@ -49,17 +49,7 @@ namespace ndp_proje1
 
 
         }
-        public void DrawShapes()
-        {
-            panel1.Refresh();
-            int pointSize = 5;
-            Graphics g = panel3.CreateGraphics();
-            g.ScaleTransform(2, 2); // X ve Y ekseni boyutlarını 2 kat artırır 
-            g.DrawEllipse(Pens.Black, circle1.x - circle1.radius, circle1.y - circle1.radius, circle1.radius * 2, circle1.radius * 2);
-            g.FillEllipse(Brushes.Green, point1.x - pointSize / 2, point1.y - pointSize / 2, pointSize, pointSize);
-
-            g.Dispose();
-        }
+      
     }
     public class _Point
     {
