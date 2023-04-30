@@ -40,7 +40,7 @@
             comboBox1.BackColor = SystemColors.ActiveBorder;
             comboBox1.ForeColor = SystemColors.ControlLightLight;
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(215, 271);
+            comboBox1.Location = new Point(369, 344);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(318, 28);
             comboBox1.TabIndex = 0;
@@ -51,9 +51,9 @@
             button1.BackgroundImageLayout = ImageLayout.Stretch;
             button1.Font = new Font("SimSun-ExtB", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(303, 327);
+            button1.Location = new Point(457, 400);
             button1.Name = "button1";
-            button1.Size = new Size(101, 37);
+            button1.Size = new Size(126, 41);
             button1.TabIndex = 2;
             button1.Text = "select";
             button1.UseVisualStyleBackColor = false;
@@ -62,13 +62,13 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = SystemColors.ActiveCaptionText;
+            label1.BackColor = Color.Transparent;
             label1.FlatStyle = FlatStyle.Flat;
-            label1.Font = new Font("PMingLiU-ExtB", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("PMingLiU-ExtB", 48F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ControlLightLight;
-            label1.Location = new Point(215, 29);
+            label1.Location = new Point(223, 50);
             label1.Name = "label1";
-            label1.Size = new Size(292, 37);
+            label1.Size = new Size(608, 80);
             label1.TabIndex = 3;
             label1.Text = "Collision Detector";
             // 
@@ -78,7 +78,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Mongolian Baiti", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ActiveCaption;
-            label2.Location = new Point(215, 234);
+            label2.Location = new Point(369, 307);
             label2.Name = "label2";
             label2.Size = new Size(335, 19);
             label2.TabIndex = 4;
@@ -91,7 +91,7 @@
             BackColor = Color.Black;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1128, 669);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button1);

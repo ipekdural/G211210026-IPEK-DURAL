@@ -5,14 +5,14 @@ namespace ndp_proje1
 {
     public partial class Form1 : Form
     {
-     
+
         public Form1()
         {
             InitializeComponent();
-           
+
         }
 
-  
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -22,7 +22,7 @@ namespace ndp_proje1
 
 
         }
-        
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -35,32 +35,32 @@ namespace ndp_proje1
             }
             if (comboBox1.Text == "Point-Circle")
             {
-              nokta_cember nokta_Cember = new nokta_cember();
-               nokta_Cember.Show();
+                nokta_cember nokta_Cember = new nokta_cember();
+                nokta_Cember.Show();
                 this.Hide();
 
             }
-            if(comboBox1.Text == "Rectangle-Rectangle")
+            if (comboBox1.Text == "Rectangle-Rectangle")
             {
                 dikdortgen_dikdortgen dikdortgen_Dikdortgen = new dikdortgen_dikdortgen();
                 dikdortgen_Dikdortgen.Show();
                 this.Hide();
             }
-            if(comboBox1.Text == "Rectangle-Circle")
+            if (comboBox1.Text == "Rectangle-Circle")
             {
-                dikdortgen_cember dikdortgen_Cember=new dikdortgen_cember();
+                dikdortgen_cember dikdortgen_Cember = new dikdortgen_cember();
                 dikdortgen_Cember.Show();
                 this.Hide();
             }
-            if(comboBox1.Text == "Circle-Circle")
+            if (comboBox1.Text == "Circle-Circle")
             {
-                cember_cember cember_Cember= new cember_cember();
+                cember_cember cember_Cember = new cember_cember();
                 cember_Cember.Show();
                 this.Hide();
 
             }
         }
 
-        
+
     }
 }
