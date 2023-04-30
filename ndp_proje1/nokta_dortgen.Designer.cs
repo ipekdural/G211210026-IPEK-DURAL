@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(nokta_dortgen));
             panel1 = new Panel();
+            pictureBox2 = new PictureBox();
             panel3 = new Panel();
             label1 = new Label();
             label7 = new Label();
@@ -52,8 +53,8 @@
             button2 = new Button();
             button1 = new Button();
             pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown5).BeginInit();
@@ -63,7 +64,6 @@
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -84,6 +84,16 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1024, 574);
             panel1.TabIndex = 2;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(1022, 572);
+            pictureBox2.TabIndex = 22;
+            pictureBox2.TabStop = false;
+            pictureBox2.Visible = false;
+           /// pictureBox2.Click += pictureBox2_Click;
             // 
             // panel3
             // 
@@ -335,15 +345,6 @@
             pictureBox1.TabIndex = 17;
             pictureBox1.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            pictureBox2.Location = new Point(0, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1022, 572);
-            pictureBox2.TabIndex = 22;
-            pictureBox2.TabStop = false;
-            pictureBox2.Visible = false;
-            // 
             // nokta_dortgen
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -358,6 +359,7 @@
             Load += nokta_dortgen_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown4).EndInit();
@@ -369,7 +371,6 @@
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
