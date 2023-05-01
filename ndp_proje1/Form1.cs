@@ -1,3 +1,4 @@
+
 using System.Windows.Forms;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -58,6 +59,36 @@ namespace ndp_proje1
                 cember_Cember.Show();
                 this.Hide();
 
+            }
+            if (comboBox1.Text == "Point-Sphere")
+            {
+                nokta_kure nokta_Kure= new nokta_kure();
+                nokta_Kure.Show();
+                this.Hide();
+            }
+            if(comboBox1.Text== "Point-Rectangular Prism")
+            {
+                nokta_dikdortgenler_prizmasi nokta_Dikdortgenler_Prizmasi = new nokta_dikdortgenler_prizmasi();
+                nokta_Dikdortgenler_Prizmasi.Show();
+                this.Hide();
+            }
+            if((comboBox1.Text == "Point-Cylinder"))
+            {
+                nokta_silindir nokta_Silindir = new nokta_silindir();
+                nokta_Silindir.Show();
+                this.Hide();   
+            }
+            if(comboBox1.Text== "Cylinder-Cylinder")
+            {
+               silindir_silindir silindir_Silindir=new silindir_silindir();
+                silindir_Silindir.Show();
+                this.Hide();
+            }
+            if(comboBox1.Text== "Sphere-Sphere")
+            {
+                kure_kure kure_Kure = new kure_kure();
+                kure_Kure.Show();
+                this.Hide();
             }
         }
 

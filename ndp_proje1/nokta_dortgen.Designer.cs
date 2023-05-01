@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(nokta_dortgen));
             panel1 = new Panel();
-            pictureBox2 = new PictureBox();
             panel3 = new Panel();
             label1 = new Label();
             label7 = new Label();
@@ -53,8 +52,8 @@
             button2 = new Button();
             button1 = new Button();
             pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown5).BeginInit();
@@ -64,13 +63,13 @@
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = SystemColors.ActiveCaptionText;
             panel1.BorderStyle = BorderStyle.Fixed3D;
-            panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(panel3);
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(label9);
@@ -79,21 +78,12 @@
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
             panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(pictureBox2);
             panel1.ForeColor = Color.Lime;
             panel1.Location = new Point(24, 26);
             panel1.Name = "panel1";
             panel1.Size = new Size(1024, 574);
             panel1.TabIndex = 2;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Location = new Point(0, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1022, 572);
-            pictureBox2.TabIndex = 22;
-            pictureBox2.TabStop = false;
-            pictureBox2.Visible = false;
-           /// pictureBox2.Click += pictureBox2_Click;
             // 
             // panel3
             // 
@@ -107,7 +97,7 @@
             panel3.Controls.Add(label5);
             panel3.Controls.Add(numericUpDown6);
             panel3.Controls.Add(label8);
-            panel3.Location = new Point(626, 172);
+            panel3.Location = new Point(630, 221);
             panel3.Name = "panel3";
             panel3.Size = new Size(365, 257);
             panel3.TabIndex = 21;
@@ -212,9 +202,9 @@
             panel2.Controls.Add(label4);
             panel2.Controls.Add(numericUpDown2);
             panel2.Controls.Add(numericUpDown1);
-            panel2.Location = new Point(35, 172);
+            panel2.Location = new Point(40, 221);
             panel2.Name = "panel2";
-            panel2.Size = new Size(252, 245);
+            panel2.Size = new Size(252, 257);
             panel2.TabIndex = 20;
             // 
             // label2
@@ -273,13 +263,13 @@
             // 
             label9.AutoSize = true;
             label9.BackColor = Color.Transparent;
-            label9.Font = new Font("Segoe Print", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             label9.ForeColor = Color.Gray;
-            label9.Location = new Point(187, 14);
+            label9.Location = new Point(296, 33);
             label9.Name = "label9";
-            label9.Size = new Size(492, 31);
+            label9.Size = new Size(437, 22);
             label9.TabIndex = 19;
-            label9.Text = "Please enter the coordinates of point and rectangle...";
+            label9.Text = "Please enter the coordinates of the point and the rectangle...";
             // 
             // button4
             // 
@@ -312,9 +302,10 @@
             // button2
             // 
             button2.BackColor = Color.Gray;
+            button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button2.ForeColor = SystemColors.ActiveCaptionText;
-            button2.Location = new Point(317, 518);
+            button2.Location = new Point(334, 518);
             button2.Name = "button2";
             button2.Size = new Size(111, 33);
             button2.TabIndex = 15;
@@ -325,9 +316,10 @@
             // button1
             // 
             button1.BackColor = Color.Gray;
+            button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = SystemColors.ActiveCaptionText;
-            button1.Location = new Point(463, 518);
+            button1.Location = new Point(481, 518);
             button1.Name = "button1";
             button1.Size = new Size(100, 33);
             button1.TabIndex = 14;
@@ -345,6 +337,15 @@
             pictureBox1.TabIndex = 17;
             pictureBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(1022, 572);
+            pictureBox2.TabIndex = 22;
+            pictureBox2.TabStop = false;
+            pictureBox2.Visible = false;
+            // 
             // nokta_dortgen
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -359,7 +360,6 @@
             Load += nokta_dortgen_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown4).EndInit();
@@ -371,6 +371,7 @@
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
