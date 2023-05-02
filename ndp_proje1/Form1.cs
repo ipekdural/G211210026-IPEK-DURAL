@@ -1,4 +1,15 @@
-
+/****************************************************************************
+** SAKARYA ÜNÝVERSÝTESÝ
+** BÝLGÝSAYAR VE BÝLÝÞÝM BÝLÝMLERÝ FAKÜLTESÝ
+** BÝLGÝSAYAR MÜHENDÝSLÝÐÝ BÖLÜMÜ
+** PROGRAMLAMAYA GÝRÝÞÝ DERSÝ
+**
+** ÖDEV NUMARASI…...: 1
+** ÖÐRENCÝ ADI...............: IPEK DURAL
+** ÖÐRENCÝ NUMARASI.: G211210026
+** DERS GRUBU…………:2C
+YOUTUBE LÝNKÝ… …:
+****************************************************************************/
 using System.Windows.Forms;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
