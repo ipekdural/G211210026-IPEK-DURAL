@@ -4,20 +4,18 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace ndp_proje1
 {
-    public partial class yuzey_kure : Form
+    public partial class kure_dikdortgenler_prizmasi : Form
     {
         int control = 0;
         Sphere sphere1 = new Sphere();
-        Surface surface1 = new Surface();
-        public yuzey_kure()
+        RectPrism rectPrism1 = new RectPrism();
+        public kure_dikdortgenler_prizmasi()
         {
             InitializeComponent();
         }
@@ -27,28 +25,41 @@ namespace ndp_proje1
             Environment.Exit(0);
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)//sil
+        {
+
+        }
+
         private void button3_Click(object sender, EventArgs e)
         {
             Form1 f = new Form1();
             f.Show();
             this.Hide();
         }
-        public void yuzeyKure()
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            kureDikdortgenlerPrizmasi();
+            button2.Enabled = true;
+
+        }
+        public void kureDikdortgenlerPrizmasi()
         {
             sphere1.x = (int)numericUpDown1.Value;
             sphere1.y = (int)numericUpDown2.Value;
             sphere1.z = (int)numericUpDown3.Value;
             sphere1.radius = (int)numericUpDown4.Value;
 
-            surface1.x = (int)numericUpDown5.Value;
-            surface1.y = (int)numericUpDown6.Value;
-            surface1.z = (int)numericUpDown7.Value;
-            surface1.nx = (int)numericUpDown8.Value;
-            surface1.ny = (int)numericUpDown9.Value;
-            surface1.nz = (int)numericUpDown10.Value;
+            rectPrism1.x = (int)numericUpDown5.Value;
+            rectPrism1.y = (int)numericUpDown6.Value;
+            rectPrism1.z = (int)numericUpDown7.Value;
+            rectPrism1.width = (int)numericUpDown8.Value;
+            rectPrism1.height = (int)numericUpDown9.Value;
+            rectPrism1.depth = (int)numericUpDown10.Value;
 
-            float distance = (float)((sphere1.x - surface1.x) * surface1.nx) + ((sphere1.y - surface1.y) * surface1.ny) + ((sphere1.z - surface1.z) * surface1.nz);
-            if (distance <= 0)
+
+
+            if (sphere1.x + sphere1.radius >= rectPrism1.x && sphere1.x - sphere1.radius <= rectPrism1.x + rectPrism1.width && sphere1.y + sphere1.radius <= rectPrism1.y + rectPrism1.height && sphere1.z + sphere1.radius >= rectPrism1.z && sphere1.z - sphere1.radius <= rectPrism1.x + rectPrism1.depth)
             {
                 MessageBox.Show("Collision has occured!", "Condition", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 control = 1;
@@ -57,9 +68,12 @@ namespace ndp_proje1
             {
                 MessageBox.Show("Collision has not occurred!", "Condition", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
+
+
+
+
         }
-
-
         class Sphere
         {
             public int x;
@@ -68,30 +82,23 @@ namespace ndp_proje1
             public int radius;
 
         }
-        class Surface
+        class RectPrism
         {
             public int x;
             public int y;
             public int z;
-            public int nx;
-            public int ny;
-            public int nz;
+            public int width;
+            public int height;
+            public int depth;
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            yuzeyKure();
-            button2.Enabled = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            draw_surface_sphere draw_Surface_Sphere = new draw_surface_sphere();
-            draw_Surface_Sphere.x = control;
-            draw_Surface_Sphere.Show();
+            draw_sphere_rectprism d = new draw_sphere_rectprism();
+            d.x = control;
+            d.Show();
             this.Hide();
         }
     }
-
 }

@@ -10,18 +10,12 @@ using System.Windows.Forms;
 
 namespace ndp_proje1
 {
-
-    public partial class draw_point_rect_prism : Form
+    public partial class draw_sphere_rectprism : Form
     {
         public int x;
-        public draw_point_rect_prism()
+        public draw_sphere_rectprism()
         {
             InitializeComponent();
-        }
-
-        private void draw_point_rect_prism_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -31,53 +25,53 @@ namespace ndp_proje1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            nokta_dikdortgenler_prizmasi d = new nokta_dikdortgenler_prizmasi();
+            kure_dikdortgenler_prizmasi k = new kure_dikdortgenler_prizmasi();
+            k.Show();
             this.Hide();
-            d.Show();
         }
 
-        private void draw_point_rect_prism_Paint(object sender, PaintEventArgs e)
+        private void draw_sphere_rectprism_Paint(object sender, PaintEventArgs e)
         {
 
             if (x == 1)
             {
-
-                //x1: İlk noktanın x koordinatı.
-                //y1: İlk noktanın y koordinatı.
-                //x2: İkinci noktanın x koordinatı.
-                //y2: İkinci noktanın y koordinatı.
-                //DrawLine(Pen pen, float x1, float y1, float x2, float y2)
-
                 label1.Visible = true;
                 System.Drawing.Graphics g;
                 g = this.CreateGraphics();
-                Pen p = new Pen(System.Drawing.Color.Lime, 5);
+                Pen p1 = new Pen(System.Drawing.Color.Red, 10);
+                Pen p2 = new Pen(System.Drawing.Color.Blue, 10);
+                g.DrawEllipse(p1, 400, 250, 200, 200);
+                g.FillEllipse(Brushes.PaleVioletRed, 400, 250, 200, 200);
+                Pen p=new Pen(Color.PaleGreen, 10);
                 g.DrawRectangle(p, 200, 200, 200, 300);
                 g.DrawLine(p, 200, 200, 300, 100);
                 g.DrawLine(p, 400, 200, 500, 100);
                 g.DrawLine(p, 500, 100, 500, 400);
                 g.DrawLine(p, 400, 500, 500, 400);
                 g.DrawLine(p, 300, 100, 500, 100);
-                g.FillEllipse(Brushes.Lime, 300, 300, 10, 10);
-
 
 
 
             }
             else
             {
-
                 label2.Visible = true;
                 System.Drawing.Graphics g;
                 g = this.CreateGraphics();
-                Pen p = new Pen(System.Drawing.Color.Lime, 5);
+                Pen p1 = new Pen(System.Drawing.Color.Red, 10);
+                Pen p2 = new Pen(System.Drawing.Color.Blue, 10);
+                g.DrawEllipse(p1, 750, 250, 200, 200);
+                g.FillEllipse(Brushes.PaleVioletRed, 750, 250, 200, 200);
+                Pen p = new Pen(Color.PaleGreen, 10);
                 g.DrawRectangle(p, 200, 200, 200, 300);
                 g.DrawLine(p, 200, 200, 300, 100);
                 g.DrawLine(p, 400, 200, 500, 100);
                 g.DrawLine(p, 500, 100, 500, 400);
                 g.DrawLine(p, 400, 500, 500, 400);
                 g.DrawLine(p, 300, 100, 500, 100);
-                g.FillEllipse(Brushes.Lime, 150, 100, 10, 10);
+
+
+
 
 
             }

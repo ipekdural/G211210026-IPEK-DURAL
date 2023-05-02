@@ -18,7 +18,7 @@ namespace ndp_proje1
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            string[] items = new string[] { "Point-Rectangle", "Point-Circle", "Rectangle-Rectangle", "Rectangle-Circle", "Circle-Circle", "Point-Sphere", "Point-Rectangular Prism", "Point-Cylinder", "Cylinder-Cylinder", "Sphere-Sphere", "Sphere-Cylinder", "Surface-Sphere", "Surface-Rectangular Prism", "Surface-Cylinder", "Sphere-Rectangular Prism", "Rectangular Prism-Rectangular Prism" };
+            string[] items = new string[] { "Point-Rectangle", "Point-Circle", "Rectangle-Rectangle", "Rectangle-Circle", "Circle-Circle", "Point-Sphere", "Point-Rectangular Prism", "Point-Cylinder", "Cylinder-Cylinder", "Sphere-Sphere", "Sphere-Cylinder", "Surface-Sphere", "Sphere-Rectangular Prism", "Rectangular Prism-Rectangular Prism" };
             comboBox1.Items.AddRange(items);
 
 
@@ -100,6 +100,18 @@ namespace ndp_proje1
             {
                 yuzey_kure yuzey_Kure = new yuzey_kure();
                 yuzey_Kure.Show();
+                this.Hide();
+            }
+            if(comboBox1.Text== "Sphere-Rectangular Prism")
+            {
+                kure_dikdortgenler_prizmasi kure_Dikdortgenler_Prizmasi = new kure_dikdortgenler_prizmasi();
+                kure_Dikdortgenler_Prizmasi.Show();
+                this.Hide();
+            }
+            if (comboBox1.Text== "Rectangular Prism-Rectangular Prism")
+            {
+                dikdortgenler_prizmasý2 dikdortgenler_Prizmasý2 = new dikdortgenler_prizmasý2();
+                dikdortgenler_Prizmasý2.Show();
                 this.Hide();
             }
         }

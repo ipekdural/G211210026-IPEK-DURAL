@@ -10,18 +10,12 @@ using System.Windows.Forms;
 
 namespace ndp_proje1
 {
-
-    public partial class draw_point_rect_prism : Form
+    public partial class draw_2rectprism : Form
     {
         public int x;
-        public draw_point_rect_prism()
+        public draw_2rectprism()
         {
             InitializeComponent();
-        }
-
-        private void draw_point_rect_prism_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -31,34 +25,35 @@ namespace ndp_proje1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            nokta_dikdortgenler_prizmasi d = new nokta_dikdortgenler_prizmasi();
-            this.Hide();
+            dikdortgenler_prizması2 d = new dikdortgenler_prizması2();
             d.Show();
+            this.Hide();
         }
 
-        private void draw_point_rect_prism_Paint(object sender, PaintEventArgs e)
+        private void draw_2rectprism_Paint(object sender, PaintEventArgs e)
         {
 
             if (x == 1)
             {
-
-                //x1: İlk noktanın x koordinatı.
-                //y1: İlk noktanın y koordinatı.
-                //x2: İkinci noktanın x koordinatı.
-                //y2: İkinci noktanın y koordinatı.
-                //DrawLine(Pen pen, float x1, float y1, float x2, float y2)
-
                 label1.Visible = true;
                 System.Drawing.Graphics g;
                 g = this.CreateGraphics();
-                Pen p = new Pen(System.Drawing.Color.Lime, 5);
+                Pen k = new Pen(Color.Red, 8);
+                Pen p = new Pen(Color.Blue, 8);
                 g.DrawRectangle(p, 200, 200, 200, 300);
                 g.DrawLine(p, 200, 200, 300, 100);
                 g.DrawLine(p, 400, 200, 500, 100);
                 g.DrawLine(p, 500, 100, 500, 400);
                 g.DrawLine(p, 400, 500, 500, 400);
                 g.DrawLine(p, 300, 100, 500, 100);
-                g.FillEllipse(Brushes.Lime, 300, 300, 10, 10);
+
+
+                g.DrawRectangle(k, 300, 300, 200, 300);
+                g.DrawLine(k, 300, 300, 400, 200);
+                g.DrawLine(k, 400, 200, 600, 200);
+                g.DrawLine(k, 500, 300, 600, 200);
+                g.DrawLine(k, 600, 200, 600, 500);
+                g.DrawLine(k, 500, 600, 600, 500);
 
 
 
@@ -70,14 +65,24 @@ namespace ndp_proje1
                 label2.Visible = true;
                 System.Drawing.Graphics g;
                 g = this.CreateGraphics();
-                Pen p = new Pen(System.Drawing.Color.Lime, 5);
+                Pen k = new Pen(Color.Red, 8);
+                Pen p = new Pen(Color.Blue, 8);
                 g.DrawRectangle(p, 200, 200, 200, 300);
                 g.DrawLine(p, 200, 200, 300, 100);
                 g.DrawLine(p, 400, 200, 500, 100);
                 g.DrawLine(p, 500, 100, 500, 400);
                 g.DrawLine(p, 400, 500, 500, 400);
                 g.DrawLine(p, 300, 100, 500, 100);
-                g.FillEllipse(Brushes.Lime, 150, 100, 10, 10);
+
+
+                g.DrawRectangle(k, 500, 500, 200, 300);
+                g.DrawLine(k, 500, 500, 600, 400);
+                g.DrawLine(k, 600, 400, 800, 400);
+                g.DrawLine(k, 700, 500, 800, 400);
+                g.DrawLine(k, 800, 400, 800, 700);
+                g.DrawLine(k, 700, 800, 800, 700);
+
+
 
 
             }
