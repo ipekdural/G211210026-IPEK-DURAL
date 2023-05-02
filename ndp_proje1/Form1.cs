@@ -90,6 +90,18 @@ namespace ndp_proje1
                 kure_Kure.Show();
                 this.Hide();
             }
+            if(comboBox1.Text== "Sphere-Cylinder")
+            {
+                kure_silindir kure_Silindir = new kure_silindir();
+                kure_Silindir.Show();
+                this.Hide();
+            }
+            if(comboBox1.Text== "Surface-Sphere")
+            {
+                yuzey_kure yuzey_Kure = new yuzey_kure();
+                yuzey_Kure.Show();
+                this.Hide();
+            }
         }
 
 

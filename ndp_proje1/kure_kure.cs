@@ -73,7 +73,7 @@ namespace ndp_proje1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            draw_sphere_sphere s =new draw_sphere_sphere();
+            draw_sphere_sphere s = new draw_sphere_sphere();
             s.x = control;
             s.Show();
             this.Hide();
